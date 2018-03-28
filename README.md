@@ -54,7 +54,7 @@ class BlogPolicy extends AbstractPolicy
 
 ```
 
-Evaluate the your Policy Class
+Evaluate your Policy Class
 
 ```php
 
