@@ -1,6 +1,31 @@
+# Config file for https://travis-ci.org/
+# Validate this file here - http://lint.travis-ci.org/
+
 language: php
+
+# Define the php versions against we want to test our code
 php:
-  - '7.0'
-  - '7.1'
-  - hhvm # on Trusty only
-  - nightly
+    - 7.1
+    - 7.2
+
+# Note: Code coverage requires php-xDebug extension enabled on CI server
+
+install:
+  # Install composer packages
+  - travis_retry composer install --no-interaction --no-suggest
+
+# Testing the app (see phpunit.xml) for configs, generating Code Coverage report
+script:
+  - ./vendor/bin/phpunit
+
+#after_failure:
+
+# Tell Travis CI to monitor only 'master' branch
+branches:
+  only: master
+
+# You can delete the cache using travis-ci web interface
+cache:
+  directories:
+  - vendor
+  - $HOME/.cache/composer
