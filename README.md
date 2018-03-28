@@ -84,9 +84,9 @@ That's it! You can now create multiple policy classes that aggregates your condi
 The allow() and forbid() methods
 ---------
 
-The **allow()** accepts a boolean and message. If first argument is true, then the **check()** will return true. Otherwise, will throw a ViolationException.
+The **allow()** accepts a boolean and a violation message. If first argument is true, then the **check()** will return true. Otherwise, will throw a ViolationException.
 
-The **forbid()** accepts a boolean and message. If first argument is false, then the **check()** will throw a ViolationException. Otherwise, will return true.
+The **forbid()** accepts a boolean and a violation message. If first argument is false, then the **check()** will throw a ViolationException. Otherwise, will return true.
 
 Installation
 ------------
