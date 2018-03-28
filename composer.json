@@ -1,7 +1,7 @@
 {
     "name": "jcfrane/policy",
     "description": "A simple and naive policy implementation",
-    "keywords": ["template", "composer", "package"],
+    "keywords": ["policy", "php"],
     "license": "MIT",
     "authors": [
         {
