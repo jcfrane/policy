@@ -12,7 +12,7 @@ Benefits
 How to use?
 ---------
 
-Create a class the extends **AbstractPolicy**
+Create a class that extends **AbstractPolicy**
 
 ```php
 use JcFrane\Policy\AbstractPolicy;
